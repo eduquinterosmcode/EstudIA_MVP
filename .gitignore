@@ -1,0 +1,15 @@
+# Archivo: .gitignore
+
+# 1. ¡LA API KEY! (El archivo más importante)
+.streamlit/secrets.toml
+
+# 2. El Entorno Virtual (¡Gigante e innecesario!)
+.venv/
+
+# 3. Basura de Python
+__pycache__/
+*.pyc
+
+# 4. Basura del Sistema Operativo
+.DS_Store
+Thumbs.db

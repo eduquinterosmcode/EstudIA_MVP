@@ -1,0 +1,18 @@
+# Archivo: .streamlit/config.toml
+
+[theme]
+# Esto activa el modo oscuro "nativo" de Streamlit
+base = "dark"
+
+# Este es el azul "tech" que te gustó para los botones
+primaryColor = "#0068C9"
+
+# Colores de fondo (para que no sea un solo "negro")
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#1A1B26" # Color para el "selectbox"
+
+# ¡LA SOLUCIÓN! Esto arregla las "letras pequeñas"
+textColor = "#FAFAFA"
+
+# Fuente
+font = "sans serif"
