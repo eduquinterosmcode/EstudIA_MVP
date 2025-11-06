@@ -124,9 +124,9 @@ with tab2:
     # --- LÓGICA DEL "ROUTER" ---
     
     # MODO 1 y 2: El Chat Manual (Tu V4.4 "Golden" que ya funciona)
-    if demo_mode in ("Modo: Alumno Nuevo (Función 2)", "Modo: Perfil 'María' (Función 3)"):
+    if demo_mode in ("Modo: Alumno Nuevo (Tutor guía)", "Modo: Perfil 'María' (DEMO)"):
         
-        if demo_mode == "Modo: Perfil 'María' (Función 3)":
+        if demo_mode == "Modo: Perfil 'María' (DEMO)":
             system_prompt_a_usar = PROMPT_PERFIL_MARIA
             st.warning("Perfil 'María' cargado (débil en derivadas). El bot ahora se adaptará a ella.")
             session_key = "chat_history_maria" 
@@ -175,7 +175,7 @@ with tab2:
             st.error(f"Error al inicializar el chat socrático: {e}")
 
     # MODO 3: El Chat RAG (¡La Nueva Función 5!)
-    elif demo_mode == "Modo: Chat con tu Pitch (Función 5 - RAG)":
+    elif demo_mode == "Modo: Chat con tu Pitch (RAG)":
         
         st.info("Modo RAG: El bot ahora solo responderá basándose en el texto de la Pestaña 1.")
         
