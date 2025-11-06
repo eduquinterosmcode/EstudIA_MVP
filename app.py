@@ -99,7 +99,7 @@ with tab2:
     demo_mode = st.selectbox(
         "Selecciona el Modo de Demo:",
         (
-            "Modo: Alumno Nuevo (Tutor guía) ", 
+            "Modo: Alumno Nuevo (Tutor guía)", 
             "Modo: Perfil 'María' (DEMO)",
             "Modo: Chat con tu Pitch (RAG)" # <- ¡LA NUEVA OPCIÓN!
         )
