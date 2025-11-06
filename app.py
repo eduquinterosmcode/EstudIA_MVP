@@ -73,9 +73,23 @@ with tab1:
                     # 2. RESUMEN CON GPT-4
                     st.subheader("2. Resumen y Puntos Clave (GPT-4)")
                     system_prompt = """
-                    Eres un asistente académico experto. Tu misión es leer la transcripción...
-                    (El resto del prompt de resumen)
-                    """
+                                    Eres "EstudIA", un asistente académico experto, amigable y perspicaz.
+                                    Tu misión es leer la transcripción de una clase (de cualquier materia, desde Cálculo hasta Filosofía) y ayudar al estudiante a entender lo esencial.
+
+                                    Por favor, responde SIEMPRE usando la siguiente estructura Markdown. Sé conciso y ve al grano:
+
+                                    **Resumen:**
+                                    (Aquí va tu resumen conciso, idealmente en 3 frases.)
+
+                                    **Puntos Clave (los 5 conceptos más importantes):**
+                                     1.  [Punto clave 1]
+                                     2.  [Punto clave 2]
+                                     3.  [Punto clave 3]
+                                     4.  [Punto clave 4]
+                                     5.  [Punto clave 5]
+
+                                        (No añadas saludos ni despedidas, solo la estructura.)
+                                            """
                     summary_response = client.chat.completions.create(
                         model="gpt-4-turbo",
                         messages=[
