@@ -114,7 +114,6 @@ with tab2:
         "Selecciona el Modo de Demo:",
         (
             "Modo: Alumno Nuevo (Tutor guía)", 
-            "Modo: Perfil 'María' (DEMO)",
             "Modo: Chat con tu Pitch (RAG)" # <- ¡LA NUEVA OPCIÓN!
         )
     )
